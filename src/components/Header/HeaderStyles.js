@@ -30,6 +30,7 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  margin-left: 6rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
@@ -47,10 +48,11 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
-  line-height: 32px;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  line-height: 110px;
   color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
+  transition: 0.2s ease;
   &:hover {
     color: #fff;
     opacity: 1;

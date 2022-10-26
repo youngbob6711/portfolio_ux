@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { AiFillCaretDown, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
+import { DiScala } from 'react-icons/di';
+import { GoMarkGithub } from 'react-icons/go'
+import { ImFacebook } from 'react-icons/im'
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
@@ -10,37 +12,51 @@ const Header = () =>  (
     <Div1>
       <Link href="/">
         <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-          <DiCssdeck size="3rem" /> <span>Portfolio</span>
+          <DiScala size="2.4rem" />  <span>Alex Ngii</span>
         </a>
       </Link>
     </Div1>
     <Div2>
       <li>
         <Link href="#projects">
-          <NavLink>Projects</NavLink>
+          <NavLink>About</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+          <NavLink>Awards</NavLink>
         </Link>
       </li>        
       <li>
         <Link href="#about">
-          <NavLink>About</NavLink>
+          <NavLink>Projects</NavLink>
+        </Link>
+      </li> 
+      <li>
+        <Link href="#about">
+          <NavLink>Footer</NavLink>
+        </Link>
+      </li> 
+      <li>
+        <Link href="#about">
+          <NavLink>Down <AiFillCaretDown size="1.7rem"/> </NavLink>
         </Link>
       </li>        
     </Div2>
       <Div3>
         <SocialIcons href="https://google.com">
-          <AiFillGithub size="3rem" />
+          <GoMarkGithub size="1.9rem" />
         </SocialIcons>
         <SocialIcons href="https://google.com">
-          <AiFillLinkedin size="3rem" />
+          <AiFillLinkedin size="1.9rem" />
         </SocialIcons>
         <SocialIcons href="https://google.com">
-          <AiFillInstagram size="3rem"/>
+          <AiOutlineTwitter size="1.9rem"/>
         </SocialIcons>
+        <SocialIcons href="https://google.com">
+          <ImFacebook size="1.9rem"/>
+        </SocialIcons>
+
       </Div3>
     </Container>
 );
