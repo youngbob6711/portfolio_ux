@@ -38,8 +38,8 @@ const Header = () =>  (
         </Link>
       </li> 
       <li>
-        <Link href="#about">
-          <NavLink>Down <AiFillCaretDown size="1.7rem"/> </NavLink>
+        <Link href="#footer">
+          <NavLink>go down<AiFillCaretDown size="1.7rem"/> </NavLink>
         </Link>
       </li>        
     </Div2>
