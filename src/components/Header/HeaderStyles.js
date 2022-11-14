@@ -3,11 +3,16 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 3fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  grid-column-gap: 0.4rem;
+  padding: 4rem;
+  alignitems: centre;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 5rem;
+  background: transparent;
+  border-radius: 30px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -49,13 +54,14 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   font-size: 1.6rem;
+  align-items: centre;
   justify-content: space-between;
   line-height: 110px;
   color: rgba(255, 255, 255, 0.75);
-  transition: 0.2s ease;
+  transition: 0.3s ease;
   &:hover {
     color: #fff;
-    opacity: 1;
+    opacity: 3;
     cursor: pointer;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -70,7 +76,6 @@ export const ContactDropDown = styled.button`
   position: relative;
   background: none;
   font-size: 1.7rem;
-
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;

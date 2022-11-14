@@ -7,25 +7,28 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 const Footer = () => {
   return (
     <FooterWrapper>
+      <Slogan>Increasing skills one project at a time</Slogan> <br/> <Slogan>Trusting the process</Slogan>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
+          <LinkTitle>text:</LinkTitle>
+          <LinkItem href="+254705379181">+254705379181</LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:contact@jsmastery.com">
-            contact@jsmastery.com
+          <LinkTitle>Email:</LinkTitle>
+          <LinkItem href="mailto:alexngii6711@gmail.com">
+            alexngii6711@gmail.com
           </LinkItem>
+          
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          
+        <p>Copyright @2022</p>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://google.com">
-            <AiFillGithub size="3rem" />
+            <AiFillGithub size="2.9rem" />
           </SocialIcons>
           <SocialIcons href="https://google.com">
             <AiFillLinkedin size="3rem" />
